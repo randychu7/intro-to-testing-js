@@ -21,10 +21,22 @@ describe('sayHello',function (){
     it('should return "Hello, Jane!"', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
+    it('should return "Hello, World"', function () {
+        expect(sayHello()).toBe(("Hello, World!"));
+    });
+    it('should return true', function () {
+        expect(sayHello(true)).toBe(("Hello, World!"))
+    });
+        it('should return false', function () {
+            expect(sayHello(false)).toBe(("Hello, World!"))
+    });
+
+
+});
 
 // })
 // describe('sayHello("Alex")', function (){
-    it('should return "Hello, Alex!', function () {
+    it('should return "Hello, Alex!"', function () {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
 // })
@@ -33,5 +45,5 @@ describe('sayHello',function (){
     it('should return "Hello, Pat!', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!")
     });
-})
+
 
