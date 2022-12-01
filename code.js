@@ -4,25 +4,28 @@ function helloWorld() {
 }
 helloWorld();
 
-function sayHello(input){
-    if (input === true){
+function sayHello(input) {
+    if (input === true) {
         return "Hello, World!"
-    }else if (input === undefined) {
+    } else if (input === undefined) {
         return "Hello, World!";
-    }else if(input === false){
-        return "Hello, World!";}
-    else{
+    } else if (input === false) {
+        return "Hello, World!";
+    } else {
         return `Hello, ${input}!`;
-        }
-
+    }
 }
-//     if(input === "Alex"){
-//         return "Hello, Alex!"
-//     }else if(input === "Pat"){
-//         return "Hello, Pat!"
-//     }else{
-//     return "Hello, Jane!";
-// }}
+function isFive(input){
+if (typeof input === 'boolean'){
+    return true;
+}else if(input == 5){
+    return true;
+}else{
+    return false;
+}
+}
 
-   sayHello("Hello, World");
+function isEven(input){
+    return input % 2 === 0
+}
 
