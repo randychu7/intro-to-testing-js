@@ -58,11 +58,11 @@ function isVowel(x) {
 // console.log(isVowel("a"));
 
 function add (input1, input2) {
-    if (typeof (input1 || input2) == 'string') {
+    if (typeof input1 === 'number' && typeof input2 === 'string') {
         return NaN;
     } else {
         return parseFloat(input1 + input2);
     }
 }
-console.log(add(2, 'apple'));
+console.log(add('string', 'number'));
 
